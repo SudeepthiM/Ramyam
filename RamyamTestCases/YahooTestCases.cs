@@ -38,7 +38,7 @@ namespace RamyamTestCases
             _driver.FindElement(By.Id("rtetext")).SendKeys("I Love You Buddi Gadaaa");
             _driver.FindElement(By.XPath(".//*[@id='attachment-button-input']")).Click();
             SendKeys.SendWait(@"C:\Challengesfacedwithseleniumwebdriver.docx");
-            SendKeys.SendWait(@"{Enter}");
+            SendKeys.SendWait(@"{Enter}"); //This works only if you run VS as an admin
 
             _driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(20));
             Thread.Sleep(3000);
